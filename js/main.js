@@ -19,6 +19,9 @@ $collapse.on('click', function (e) {
 
 $bounce.on('click', function (e) {
   $('.circle').addClass('bounce');
+});
+
+$('.circle').on('animationend', function (e) {
   $('.circle').removeClass('bounce');
 });
 
