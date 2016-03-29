@@ -117,10 +117,6 @@ div {
   overflow-y: auto;
 }
 
-.words {
-  animation: grow 0.5s forwards;
-}
-
 @keyframes grow {
 
   0% { max-height: 0; }
@@ -138,6 +134,7 @@ div {
   overflow: hidden;
 
   color: mediumpurple;
+  animation: grow 0.5s forwards;
 }
 
 @keyframes transition {
