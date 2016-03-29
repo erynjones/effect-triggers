@@ -35,6 +35,11 @@ div {
 
   background-color: limegreen;
   opacity: 0;
+  transition: all 1s ease;
+}
+
+.box-show {
+  opacity: 100;
 }
 
 .diamond {
