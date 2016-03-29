@@ -68,11 +68,16 @@ div {
 
   color: darkgoldenrod;
   text-align: center;
+  transition: 0.5s ease;
 }
 
 .panel h2 {
   margin: 0;
   padding: 3rem 0;
+}
+
+.expand {
+  max-height: 0;
 }
 
 .circle {
@@ -85,7 +90,18 @@ div {
 }
 
 .bounce {
-  animation: bounce 2s cubic-bezier(0,1.55,1,-0.58) forwards;
+  animation: bounce 2s cubic-bezier(0,1.55,1,-0.58);
+  transform: translate(-50%, -50%);
+}
+
+@keyframes bounce {
+	0% {
+
+  }
+
+	100% {
+
+  }
 }
 
 .list {
