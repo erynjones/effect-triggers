@@ -39,7 +39,7 @@ div {
 }
 
 .box-show {
-  opacity: 100;
+  opacity: 1;
 }
 
 .diamond {
@@ -50,6 +50,11 @@ div {
 
   background-color: hotpink;
   transform: rotate(45deg);
+  transition: all 0.75s ease;
+}
+
+.diamond-move {
+  right: 50px;
 }
 
 .panel {
@@ -79,6 +84,10 @@ div {
   border-radius: 50%;
 }
 
+.bounce {
+  animation: bounce 2s cubic-bezier(0,1.55,1,-0.58) forwards;
+}
+
 .list {
   bottom: 1em;
   margin: 0;
@@ -103,4 +112,9 @@ div {
   overflow: hidden;
 
   color: mediumpurple;
+}
+
+@keyframes transition {
+  0% { transform: translate(0px,0px);}
+  100% { transform: translate(-150px,0px);}
 }
