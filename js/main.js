@@ -1,7 +1,9 @@
 var $btn = $('.btn-show-hide');
-var $move= $('.btn-move');
-var $bounce= $('.btn-bounce');
-var $collapse= $('.btn-collapse-expand');
+var $move = $('.btn-move');
+var $collapse = $('.btn-collapse-expand');
+var $bounce = $('.btn-bounce');
+var $append = $('.btn-append');
+var $list = $('.list');
 
 $btn.on('click', function (e) {
   $('.box').toggleClass('box-show');
@@ -16,5 +18,13 @@ $collapse.on('click', function (e) {
 });
 
 $bounce.on('click', function (e) {
-  $('.circle').toggleClass('bounce');
+  $('.circle').addClass('bounce');
+  $('.circle').removeClass('bounce');
+});
+
+$append.on('click', function (e) {
+  var $li = $('<li>');
+
+  $list.append($li);
+  $li.addClass('words');
 });
