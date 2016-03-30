@@ -87,6 +87,9 @@ div {
 
   background-color: orange;
   border-radius: 50%;
+}
+
+.circle-bounce {
   animation: bounce 1s ease;
 }
 

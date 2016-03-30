@@ -1,7 +1,7 @@
 var $btn = $('.btn-show-hide');
 var $move = $('.btn-move');
-var $collapse = $('.btn-collapse-expand');
 var $bounce = $('.btn-bounce');
+var $collapse = $('.btn-collapse-expand');
 var $append = $('.btn-append');
 var $list = $('.list');
 
@@ -18,11 +18,11 @@ $collapse.on('click', function (e) {
 });
 
 $bounce.on('click', function (e) {
-  $('.circle').addClass('bounce');
+  $('.circle').addClass('circle-bounce');
 });
 
 $('.circle').on('animationend', function (e) {
-  $('.circle').removeClass('bounce');
+  $('.circle').removeClass('circle-bounce');
 });
 
 $append.on('click', function (e) {
